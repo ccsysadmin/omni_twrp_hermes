@@ -1,1 +1,1 @@
-# android_device_xiaomi_hermes
+# Xiaomi Redmi Note 2
