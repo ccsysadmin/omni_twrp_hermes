@@ -1,1 +1,3 @@
 add_lunch_combo omni_hermes-eng
+add_lunch_combo omni_hermes-user
+add_lunch_combo omni_hermes-userdebug

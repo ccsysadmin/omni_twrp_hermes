@@ -1,5 +1,5 @@
 /system        ext4    /dev/block/platform/mtk-msdc.0/by-name/system    flags=display="System";backup=1;wipeingui
-/system_image  ext4    /dev/block/platform/mtk-msdc.0/by-name/system    flags=display="System";backup=1;flashimg=1
+/system_image  ext4    /dev/block/platform/mtk-msdc.0/by-name/system    flags=display="System Image";backup=1;flashimg=1
 /data          ext4    /dev/block/platform/mtk-msdc.0/by-name/userdata  flags=backup=1;wipeingui;wipeduringfactoryreset
 /cache         ext4    /dev/block/platform/mtk-msdc.0/by-name/cache     flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
 /boot          emmc    /dev/block/platform/mtk-msdc.0/by-name/boot      flags=display="Boot";backup=1;flashimg=1
@@ -11,5 +11,5 @@
 /uboot         emmc    /dev/block/platform/mtk-msdc.0/by-name/lk        flags=display="Uboot";backup=1;flashimg=1
 /persist       emmc    /dev/block/platform/mtk-msdc.0/by-name/persist   
 /preloader 	   emmc    /dev/block/mmcblk0boot0                          
-/external_sd   auto    /dev/block/mmcblk1p1   /dev/block/mmcblk1                flags=display="External SD";storage;wipeingui;removable
-/usbstorage    auto	   /dev/block/sda1		  /dev/block/sda				    flags=fsflags=utf8;display="USB Storage";storage;removable
+/external_sd   auto    /dev/block/mmcblk1p1   /dev/block/mmcblk1        flags=display="External SD";storage;wipeingui;removable
+/usbstorage    auto	   /dev/block/sda1		  /dev/block/sda			flags=fsflags=utf8;display="USB Storage";storage;removable

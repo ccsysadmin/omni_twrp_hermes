@@ -1,11 +1,11 @@
-## TWRP device tree for Lenovo P70-A
+## TWRP device tree for Xiaomi Redmi Note 2
 
-Add to `.repo/local_manifests/p70.xml`:
+Add to `.repo/local_manifests/hermes.xml`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<project path="device/lenovo/P70" name="android_device_lenovo_P70" remote="TeamWin" revision="android-5.1" />
+	<project path="device/xiaomi/hermes" name="ccsysadmin/omni_twrp_hermes" remote="github" revision="android-5.1" groups="pdk" />
 </manifest>
 ```
 
@@ -15,6 +15,6 @@ To build:
 
 ```sh
 . build/envsetup.sh
-lunch omni_p70-eng
-make -j 9 recoveryimage
+lunch omni_hermes-userdebug
+mka -i -j 5 recoveryimage
 ```
